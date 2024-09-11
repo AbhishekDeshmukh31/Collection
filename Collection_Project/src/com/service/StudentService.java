@@ -120,7 +120,7 @@ public class StudentService {
 
 	public List<Student> updateAStudentage(int a, int newage) {
 
-		List<Student> db7 = new ArrayList<Student>();
+		List<Student> db8 = new ArrayList<Student>();
 		dao = new StudentDao();
 		List<Student> db = dao.getAllStudents();
 		for (Student student : db) {

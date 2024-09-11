@@ -46,13 +46,11 @@ public class TestStudentController {
 		System.err.println("Students whose age is :");
 		System.out.println(db8);
 
+		System.err.println("Total Students are :");
 		List<Student> db9 = sc.getTotalStudent();
-		
 		for (Student student : db9) {
-			System.err.println("Total Students are :");
 			System.out.println(student);
 		}
-
 
 	}
 
