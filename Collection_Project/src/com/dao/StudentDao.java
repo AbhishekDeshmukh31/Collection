@@ -16,6 +16,7 @@ public class StudentDao {
 		db.add(new Student("Shubham", 2, 71, "Nagar", 22));
 		db.add(new Student("Abhishek", 4, 88, "Satara", 23));
 		db.add(new Student("Rohit", 3, 55, "Nagar", 24));
+		db.add(new Student("Shankar", 6, 90, "C.SambhajiNagar", 22));
 		return db;
 
 	}
