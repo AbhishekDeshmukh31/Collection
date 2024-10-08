@@ -1,5 +1,7 @@
 package com.service;
 
+import java.io.FileInputStream;
+import java.util.Collections;
 import java.util.List;
 
 import com.dao.PlayerDao;
@@ -57,7 +59,7 @@ public class PlayerService {
 		return db;
 	}
 
-	public List<Player> getplayerteamservice(String s) {
+	public List<Player> getplayerteamservice(String s) { 
 
 		dao = new PlayerDao();
 		List<Player> db = dao.getallplayers();
@@ -88,6 +90,17 @@ public class PlayerService {
 		List<Player> db = dao.getallplayers();
 		for (Player player : db) {
 			if (player.getName().startsWith(s)) {
+				System.out.println(player);
+			}
+		}
+		return db;
+	}
+	public List<Player> playersortrunservice(int j) {
+
+		dao = new PlayerDao();
+		List<Player> db = dao.getallplayers();
+		for (Player player : db) {
+			if (player.getJerseyno() == j) {
 				System.out.println(player);
 			}
 		}
